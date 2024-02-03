@@ -3,10 +3,12 @@
 pub(crate) mod colorspace;
 mod image_pipeline;
 mod palette_pipeline;
+mod unsized_pipeline;
 
 pub use colorspace::ColorSpace;
 pub use image_pipeline::ImagePipeline;
 pub use palette_pipeline::PalettePipeline;
+pub use unsized_pipeline::UnsizedPipeline;
 
 #[cfg(feature = "kmeans")]
 use crate::{kmeans::Centroids, ColorComponents, ColorCounts};
